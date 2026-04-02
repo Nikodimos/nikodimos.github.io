@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Blog Post | Nikodimos Enyew</title>
+    <meta name="description" content="Read full insights on modern brand strategy and design.">
+    <!-- Google Fonts (Google Sans) -->
+    <!-- Brand Favicon & SEO Open Graph -->
+    <link rel="icon" href="assets/images/logo1.png" type="image/png">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Blog Post | Nikodimos Enyew">
+    <meta property="og:description" content="Read full insights on modern brand strategy and design.">
+    <meta property="og:image" content="https://nikodimos.github.io/assets/images/nikodimos_light_portrait.png">
+    <meta property="og:url" content="https://nikodimos.github.io/blog_detail.html">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nikodimos Enyew | Read Post">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <!-- AOS & GSAP -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Core Stylings -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Liquid Glass Ambient Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Custom Modern Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-text">READING</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="glass-nav">
+        <div class="logo gradient-text" style="font-weight: 700; letter-spacing: 0;">
+            <a href="index.html" style="text-decoration: none; color: inherit;">NIKODIMOS ENYEW.</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#education">Education</a>
+            <a href="index.html#services">Services</a>
+            <a href="projects.html">Work</a>
+            <a href="index.html#testimonials">Testimonials</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <button class="search-toggle" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+            <button class="theme-toggle" id="themeToggle" aria-label="Dark/Light mode"><i class="fas fa-moon"></i></button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Global Search Overlay -->
+    <div id="search-overlay" class="glass" style="display: none; position: fixed; inset: 0; z-index: 10000; align-items: flex-start; justify-content: center; padding-top: 15vh;">
+        <div style="width: 100%; max-width: 800px; padding: 2rem; position: relative;">
+            <button id="closeSearch" style="position: absolute; top: 0; right: 2rem; background: none; border: none; font-size: 2rem; color: var(--text-primary); cursor: pointer;"><i class="fas fa-times"></i></button>
+            <input type="text" id="searchInput" placeholder="Search insights, strategy, design..." style="width: 100%; padding: 1.5rem; font-size: 2rem; background: transparent; border: none; border-bottom: 2px solid var(--text-primary); color: var(--text-primary); outline: none; font-family: inherit;">
+            <div id="searchResults" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; max-height: 50vh; overflow-y: auto;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Header Section -->
+    <section class="hero" id="blog-header" style="min-height: auto; padding-top: 200px; padding-bottom: 2rem;">
+        <div class="container" style="text-align: left; max-width: 900px; margin: 0 auto;">
+            <h1 id="detail-title" data-aos="fade-up" data-aos-delay="400" style="margin-bottom: 2rem; text-transform: none; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2;">Loading Title...</h1>
+            
+            <p id="detail-excerpt" data-aos="fade-up" data-aos-delay="500" style="font-size: 1.15rem; color: var(--text-muted); font-weight: 400; line-height: 1.6; padding-bottom: 3rem; border-bottom: 1px solid var(--border-light);"></p>
+        </div>
+    </section>
+
+    <!-- Blog Full Content -->
+    <section id="blog-content" style="padding-top: 2rem; padding-bottom: 6rem;">
+        <div class="container blog-detail-layout" style="display: grid; gap: 4rem; align-items: start;">
+            
+            <!-- Main Content Area -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <div id="detail-content" class="glass" style="padding: 4rem; border-radius: 12px; margin-bottom: 3rem;">
+                    <!-- Content injected via JS -->
+                </div>
+                
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <button class="btn btn-secondary glass" onclick="sharePost()">
+                        <i class="fas fa-share-alt" style="margin-right: 0.5rem;"></i> Share Article
+                    </button>
+                    <a href="blog.html" class="btn btn-primary">Back to Insights</a>
+                </div>
+            </div>
+            
+            <!-- Sidebar Area -->
+            <aside class="sidebar-recent" data-aos="fade-left" data-aos-delay="400" style="position: sticky; top: 120px;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-light);">Related Insights</h3>
+                <div id="sidebar-posts" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <!-- Sidebar posts injected via JS -->
+                </div>
+            </aside>
+            
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">Ready to lead?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Your brand is your greatest asset. Let’s build one that turns heads, opens doors, and creates lasting equity.</p>
+            <div data-aos="fade-up" data-aos-delay="200" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:nikodimosenyew@gmail.com" class="btn btn-primary" style="padding: 1.5rem 4rem; font-size: 1.2rem;">Book a Free Strategy Call</a>
+                <a href="assets/docs/nikodimos_resume.pdf" class="btn btn-secondary glass" style="padding: 1.5rem 4rem; font-size: 1.2rem; border-color: var(--border-light);" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Nikodimos Enyew</h3>
+                    <p>Brand Designer & Strategic Brand Consultant.<br>Based in Addis Ababa, Ethiopia.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nikodimose" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/nikodimos-enyew/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/nikodimos_enyew" aria-label="Behance" target="_blank"><i class="fab fa-behance"></i></a>
+                        <a href="https://x.com/Nikodimos_Enyew" aria-label="Twitter/X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Navigate</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#education">Education</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="projects.html">Work</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Let's Talk</h3>
+                    <div class="social-icons" style="margin-top: 1rem;">
+                        <a href="mailto:nikodimosenyew@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+251912746544" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+                        <a href="https://t.me/nikodimos" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="https://wa.me/251912746544" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Nikodimos Enyew</p>
+                <p>Brands that lead.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js" defer></script>
+    
+    <!-- Import Blog Data -->
+    <script src="js/blogs.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const rawId = urlParams.get('id');
+            const postId = rawId ? rawId.split('#')[0] : null;
+
+            if (postId && typeof blogPosts !== 'undefined') {
+                const post = blogPosts.find(p => p.id === postId);
+                if (post) {
+                    document.getElementById('detail-title').innerHTML = post.title;
+                    document.getElementById('detail-excerpt').textContent = post.excerpt;
+                    
+                    // Layout Quote Block + Standard Conrent + Appended Date/Tag
+                    let contentHtml = "";
+                    if (post.quote) {
+                        contentHtml += `<blockquote class="quote-block">"${post.quote}"</blockquote>`;
+                    }
+                    contentHtml += post.content;
+                    
+                    // Append Meta Data
+                    contentHtml += `
+                        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px dashed var(--border-light); display: flex; gap: 1rem; align-items: center;">
+                            <span style="background: rgba(121, 40, 202, 0.1); color: var(--gradient-mid); padding: 0.5rem 1.2rem; border-radius: 20px; font-weight: 600; text-transform: uppercase; font-size: 0.9rem;">${post.tag}</span>
+                            <span style="color: var(--text-muted); font-weight: 500; font-size: 1rem;"><i class="far fa-calendar-alt" style="margin-right: 0.5rem;"></i> ${post.date}</span>
+                        </div>
+                    `;
+                    
+                    document.getElementById('detail-content').innerHTML = contentHtml;
+                    
+                    // Load Sidebar Recent Posts
+                    const sidebar = document.getElementById('sidebar-posts');
+                    const recentPosts = blogPosts.filter(p => p.id !== postId).slice(0, 4);
+                    recentPosts.forEach(rp => {
+                        const a = document.createElement('a');
+                        a.href = `blog_detail.html?id=${rp.id}`;
+                        a.className = "sidebar-card glass";
+                        a.style.cursor = "none";
+                        a.innerHTML = `<h4>${rp.title}</h4><p>${rp.excerpt}</p><span style="color: var(--gradient-end); font-size: 0.9rem; margin-top: 1rem; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500;">Read more <i class="fas fa-arrow-right"></i></span>`;
+                        sidebar.appendChild(a);
+                        
+                        a.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+                        a.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+                    });
+
+                } else {
+                    document.getElementById('detail-title').textContent = "Post Not Found";
+                    document.getElementById('detail-content').innerHTML = "<p>The requested blog post doesn't exist or has been removed.</p>";
+                }
+            } else {
+                document.getElementById('detail-title').textContent = "No Post Selected";
+                document.getElementById('detail-content').innerHTML = "<p>Please return to the blog index and select a valid post.</p>";
+            }
+        });
+
+        function sharePost() {
+            if (navigator.share) {
+                navigator.share({
+                    title: document.title,
+                    url: window.location.href
+                }).catch(err => console.error("Error sharing", err));
+            } else {
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    const btn = document.querySelector('.fa-share-alt').parentElement;
+                    const originalHTML = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-check" style="margin-right: 0.5rem;"></i> Link Copied!';
+                    btn.style.borderColor = "var(--gradient-end)";
+                    btn.style.color = "var(--gradient-end)";
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalHTML;
+                        btn.style.borderColor = "";
+                        btn.style.color = "";
+                    }, 2500);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

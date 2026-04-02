@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>404 - Page Not Found | Nikodimos Enyew</title>
+    <meta name="description" content="The page you are looking for does not exist.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: rgba(var(--bg-primary-rgb), 1);
+        }
+        .error-code {
+            font-size: clamp(6rem, 15vw, 12rem);
+            line-height: 1;
+            margin: 0;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="error-container">
+        <h1 class="error-code gradient-text">404</h1>
+        <h2 style="font-size: 2rem; margin-bottom: 2rem;">Looks like you're lost.</h2>
+        <p style="color: var(--text-muted); max-width: 500px; margin-bottom: 3rem; font-size: 1.2rem;">
+            The page you are looking for doesn't exist or has been moved. Strategy dictates we map a clear way back.
+        </p>
+        <a href="index.html" class="btn btn-primary" style="padding: 1.2rem 3rem;">Return to Homepage</a>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
