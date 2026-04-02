@@ -946,25 +946,31 @@ footer a:hover {
 }
 
 /* Loader */
-#loader {
-    position: fixed;
-    inset: 0;
-    background: var(--bg-primary);
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
+#loader { 
+    position: fixed; 
+    inset: 0; 
+    background: var(--bg-primary); 
+    z-index: 10000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    pointer-events: none; 
 }
 
-.loader-text {
-    font-size: clamp(1.2rem, 5vw, 3rem);
-    font-weight: 500;
-    letter-spacing: clamp(5px, 2vw, 15px);
-    color: var(--text-primary);
-    opacity: 0;
-    text-transform: uppercase;
-    white-space: nowrap;
+.loader-text { 
+    font-size: clamp(1.2rem, 5vw, 3rem); 
+    font-weight: 500; 
+    letter-spacing: clamp(5px, 2vw, 15px); 
+    color: var(--text-primary); 
+    opacity: 0; 
+    text-transform: uppercase; 
+    white-space: nowrap; 
+    animation: breathe 1.5s ease-in-out infinite;
+}
+
+@keyframes breathe {
+    0%, 100% { opacity: 0.2; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1.05); }
 }
 
 @media (max-width: 900px) {

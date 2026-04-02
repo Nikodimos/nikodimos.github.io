@@ -130,14 +130,16 @@ window.addEventListener('scroll', () => {
 });
 
 // Loading animation
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     setTimeout(() => {
         const tl = gsap.timeline();
-        tl.to('.loader-text', { opacity: 1, duration: 0.5, ease: "power2.inOut" })
-          .to('.loader-text', { opacity: 0, duration: 0.4, ease: "power2.in", delay: 0.1 })
+        // Remove the CSS animation to smoothly fade it out with GSAP
+        gsap.set('.loader-text', { animation: 'none' });
+        
+        tl.to('.loader-text', { opacity: 0, duration: 0.4, ease: "power2.in" })
           .to('#loader', { yPercent: -100, duration: 0.8, ease: "expo.inOut" })
           .from('nav', { y: -20, opacity: 0, duration: 0.6, ease: "power2.out" }, "-=0.5");
-    }, 100);
+    }, 500); // Minimum time to ensure the breathing is seen
 });
 
 // Initialize AOS

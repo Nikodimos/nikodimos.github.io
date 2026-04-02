@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Blog & Insights | Nikodimos Enyew</title>
-    <meta name="description" content="Discover thoughts, insights, and modern perspectives on brand strategy and visual design.">
+    <meta name="description"
+        content="Discover thoughts, insights, and modern perspectives on brand strategy and visual design.">
     <!-- Google Fonts (Google Sans) -->
     <!-- Brand Favicon & SEO Open Graph -->
     <link rel="icon" href="assets/images/logo1.png" type="image/png">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Blog & Insights | Nikodimos Enyew">
-    <meta property="og:description" content="Discover thoughts, insights, and modern perspectives on brand strategy and visual design.">
-    <meta property="og:image" content="https://nikodimos.github.io/assets/images/nikodimos_light_portrait.png">
+    <meta property="og:description"
+        content="Discover thoughts, insights, and modern perspectives on brand strategy and visual design.">
+    <meta property="og:image" content="https://nikodimos.github.io/assets/images/og-image.png">
     <meta property="og:url" content="https://nikodimos.github.io/blog.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -19,7 +22,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
     <!-- AOS & GSAP -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -29,8 +34,9 @@
     <!-- Core Stylings -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
     <!-- Liquid Glass Ambient Background Orbs -->
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -62,7 +68,8 @@
         </div>
         <div style="display: flex; align-items: center; gap: 1rem;">
             <button class="search-toggle" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
-            <button class="theme-toggle" id="themeToggle" aria-label="Dark/Light mode"><i class="fas fa-moon"></i></button>
+            <button class="theme-toggle" id="themeToggle" aria-label="Dark/Light mode"><i
+                    class="fas fa-moon"></i></button>
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -70,13 +77,18 @@
             </button>
         </div>
     </nav>
-    
+
     <!-- Global Search Overlay -->
-    <div id="search-overlay" class="glass" style="display: none; position: fixed; inset: 0; z-index: 10000; align-items: flex-start; justify-content: center; padding-top: 15vh;">
+    <div id="search-overlay" class="glass"
+        style="display: none; position: fixed; inset: 0; z-index: 10000; align-items: flex-start; justify-content: center; padding-top: 15vh;">
         <div style="width: 100%; max-width: 800px; padding: 2rem; position: relative;">
-            <button id="closeSearch" style="position: absolute; top: 0; right: 2rem; background: none; border: none; font-size: 2rem; color: var(--text-primary); cursor: pointer;"><i class="fas fa-times"></i></button>
-            <input type="text" id="searchInput" placeholder="Search insights, strategy, design..." style="width: 100%; padding: 1.5rem; font-size: 2rem; background: transparent; border: none; border-bottom: 2px solid var(--text-primary); color: var(--text-primary); outline: none; font-family: inherit;">
-            <div id="searchResults" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; max-height: 50vh; overflow-y: auto;">
+            <button id="closeSearch"
+                style="position: absolute; top: 0; right: 2rem; background: none; border: none; font-size: 2rem; color: var(--text-primary); cursor: pointer;"><i
+                    class="fas fa-times"></i></button>
+            <input type="text" id="searchInput" placeholder="Search insights, strategy, design..."
+                style="width: 100%; padding: 1.5rem; font-size: 2rem; background: transparent; border: none; border-bottom: 2px solid var(--text-primary); color: var(--text-primary); outline: none; font-family: inherit;">
+            <div id="searchResults"
+                style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; max-height: 50vh; overflow-y: auto;">
             </div>
         </div>
     </div>
@@ -87,9 +99,11 @@
             <div data-aos="fade-down" data-aos-delay="300" class="hero-subtitle gradient-text">
                 Thoughts, Strategy & Articles
             </div>
-            <h1 data-aos="fade-up" data-aos-delay="400" style="margin-bottom: 1rem;">Insights <span class="gradient-text">&</span> Index.</h1>
+            <h1 data-aos="fade-up" data-aos-delay="400" style="margin-bottom: 1rem;">Insights <span
+                    class="gradient-text">&</span> Index.</h1>
             <div class="hero-desc" data-aos="fade-up" data-aos-delay="500" style="max-width: 700px; margin: 0 auto;">
-                <p>Read about design thinking, deep psychology of branding, execution strategies, and the methodology of creating visual identities that command industries.</p>
+                <p>Read about design thinking, deep psychology of branding, execution strategies, and the methodology of
+                    creating visual identities that command industries.</p>
             </div>
         </div>
     </section>
@@ -102,7 +116,8 @@
             </div>
 
             <!-- Pagination Controls -->
-            <div id="pagination-controls" style="margin-top: 4rem; display: flex; justify-content: center; gap: 1rem; align-items: center;">
+            <div id="pagination-controls"
+                style="margin-top: 4rem; display: flex; justify-content: center; gap: 1rem; align-items: center;">
                 <!-- Buttons injected via JS -->
             </div>
         </div>
@@ -112,10 +127,13 @@
     <section class="cta" id="contact">
         <div class="container">
             <h2 data-aos="fade-up">Ready to lead?</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Your brand is your greatest asset. Let’s build one that turns heads, opens doors, and creates lasting equity.</p>
-            <div data-aos="fade-up" data-aos-delay="200" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <p data-aos="fade-up" data-aos-delay="100">Your brand is your greatest asset. Let’s build one that turns
+                heads, opens doors, and creates lasting equity.</p>
+            <div data-aos="fade-up" data-aos-delay="200"
+                style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="mailto:nikodimosenyew@gmail.com" class="btn btn-primary btn-lg">Book a Free Strategy Call</a>
-                <a href="assets/docs/nikodimos_resume.pdf" class="btn btn-secondary btn-lg glass" style="border-color: var(--border-light);" download>Download Resume</a>
+                <a href="assets/docs/nikodimos_resume.pdf" class="btn btn-secondary btn-lg glass"
+                    style="border-color: var(--border-light);" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -128,10 +146,14 @@
                     <h3>Nikodimos Enyew</h3>
                     <p>Brand Designer & Strategic Brand Consultant.<br>Based in Addis Ababa, Ethiopia.</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/nikodimose" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/in/nikodimos-enyew/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.behance.net/nikodimos_enyew" aria-label="Behance" target="_blank"><i class="fab fa-behance"></i></a>
-                        <a href="https://x.com/Nikodimos_Enyew" aria-label="Twitter/X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/nikodimose" aria-label="Facebook" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/nikodimos-enyew/" aria-label="LinkedIn" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/nikodimos_enyew" aria-label="Behance" target="_blank"><i
+                                class="fab fa-behance"></i></a>
+                        <a href="https://x.com/Nikodimos_Enyew" aria-label="Twitter/X" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a>
                     </div>
                 </div>
                 <div>
@@ -150,8 +172,10 @@
                     <div class="social-icons" style="margin-top: 1rem;">
                         <a href="mailto:nikodimosenyew@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                         <a href="tel:+251912746544" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
-                        <a href="https://t.me/nikodimos" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                        <a href="https://wa.me/251912746544" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/nikodimos" target="_blank" aria-label="Telegram"><i
+                                class="fab fa-telegram-plane"></i></a>
+                        <a href="https://wa.me/251912746544" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -166,16 +190,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- We purposefully link the main script here to inherit all core behaviors (theme toggle, cursor, AOS, etc) -->
     <script src="js/script.js" defer></script>
-    
+
     <!-- Import Blog Data bypassing CORS -->
     <script src="js/blogs.js"></script>
-    
+
     <!-- Render Blogs Script -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const container = document.getElementById('blog-container');
             const paginationContainer = document.getElementById('pagination-controls');
-            
+
             if (typeof blogPosts !== 'undefined') {
                 const ITEMS_PER_PAGE = 10;
                 let currentPage = 1;
@@ -189,7 +213,7 @@
 
                     currentPosts.forEach((blog) => {
                         const card = document.createElement('div');
-                        card.className = "blog-card gsap-blog-dynamic"; 
+                        card.className = "blog-card gsap-blog-dynamic";
                         card.innerHTML = `
                             <div class="blog-card-content">
                                 <div class="blog-meta">
@@ -235,7 +259,7 @@
                     prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
                     prevBtn.disabled = page === 1;
                     if (page === 1) prevBtn.style.opacity = "0.5";
-                    prevBtn.onclick = () => { if (page > 1) { currentPage--; renderPage(currentPage); window.scrollTo({top: document.getElementById('blog-posts').offsetTop - 100, behavior: 'smooth'}); } };
+                    prevBtn.onclick = () => { if (page > 1) { currentPage--; renderPage(currentPage); window.scrollTo({ top: document.getElementById('blog-posts').offsetTop - 100, behavior: 'smooth' }); } };
                     paginationContainer.appendChild(prevBtn);
 
                     // Page Numbers
@@ -244,7 +268,7 @@
                         pageBtn.className = i === page ? "btn btn-primary" : "btn btn-secondary glass";
                         pageBtn.style.padding = "0.8rem 1.5rem";
                         pageBtn.textContent = i;
-                        pageBtn.onclick = () => { currentPage = i; renderPage(currentPage); window.scrollTo({top: document.getElementById('blog-posts').offsetTop - 100, behavior: 'smooth'}); };
+                        pageBtn.onclick = () => { currentPage = i; renderPage(currentPage); window.scrollTo({ top: document.getElementById('blog-posts').offsetTop - 100, behavior: 'smooth' }); };
                         paginationContainer.appendChild(pageBtn);
                     }
 
@@ -255,7 +279,7 @@
                     nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
                     nextBtn.disabled = page === totalPages;
                     if (page === totalPages) nextBtn.style.opacity = "0.5";
-                    nextBtn.onclick = () => { if (page < totalPages) { currentPage++; renderPage(currentPage); window.scrollTo({top: document.getElementById('blog-posts').offsetTop - 100, behavior: 'smooth'}); } };
+                    nextBtn.onclick = () => { if (page < totalPages) { currentPage++; renderPage(currentPage); window.scrollTo({ top: document.getElementById('blog-posts').offsetTop - 100, behavior: 'smooth' }); } };
                     paginationContainer.appendChild(nextBtn);
                 }
 
@@ -268,4 +292,5 @@
         });
     </script>
 </body>
+
 </html>
