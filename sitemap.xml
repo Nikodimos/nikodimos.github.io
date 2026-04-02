@@ -15,4 +15,54 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=death-of-just-make-a-logo</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=color-psychology-ethiopia</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=standing-out-sea-sameness</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=best-design-solutions-take-time</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=minimalism-vs-maximalism</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=auditing-your-brand</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=future-of-typography</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=building-trust-with-design</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=client-designer-relationship</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nikodimos.github.io/blog_detail.html?id=glassmorphism-is-here-to-stay</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
