@@ -130,12 +130,14 @@ window.addEventListener('scroll', () => {
 });
 
 // Loading animation
-window.addEventListener('load', () => {
-    const tl = gsap.timeline();
-    tl.to('.loader-text', { opacity: 1, duration: 1, ease: "power2.inOut" })
-      .to('.loader-text', { opacity: 0, duration: 0.8, ease: "power2.in", delay: 0.5 })
-      .to('#loader', { yPercent: -100, duration: 1.2, ease: "expo.inOut" })
-      .from('nav', { y: -20, opacity: 0, duration: 0.8, ease: "power2.out" }, "-=0.6");
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const tl = gsap.timeline();
+        tl.to('.loader-text', { opacity: 1, duration: 0.5, ease: "power2.inOut" })
+          .to('.loader-text', { opacity: 0, duration: 0.4, ease: "power2.in", delay: 0.1 })
+          .to('#loader', { yPercent: -100, duration: 0.8, ease: "expo.inOut" })
+          .from('nav', { y: -20, opacity: 0, duration: 0.6, ease: "power2.out" }, "-=0.5");
+    }, 100);
 });
 
 // Initialize AOS
@@ -303,13 +305,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <div id="contact-modal" class="glass" style="display: none; position: fixed; inset: 0; z-index: 100000; align-items: center; justify-content: center; opacity: 0; cursor: auto;">
                 <div id="contact-modal-bg" style="position: absolute; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);"></div>
                 
-                <div class="contact-modal-content" style="position: relative; z-index: 100001; background: rgba(var(--bg-primary-rgb), 0.95); border: 1px solid var(--border-light); padding: 4rem 3rem; width: 90%; max-width: 500px; text-align: center; border-radius: 0; box-shadow: 0 40px 100px rgba(0,0,0,0.5);">
+                <div class="contact-modal-content" style="position: relative; z-index: 100001; background: rgba(var(--bg-primary-rgb), 0.95); border: 1px solid var(--border-light); padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 5vw, 3rem); width: 90%; max-width: 500px; text-align: center; border-radius: 0; box-shadow: 0 40px 100px rgba(0,0,0,0.5);">
                     <button id="closeContactModal" style="position: absolute; top: 1.5rem; right: 1.5rem; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer; transition: color 0.3s;"><i class="fas fa-times"></i></button>
                     
                     <h3 style="font-size: 2.2rem; margin-bottom: 0.5rem; background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); -webkit-background-clip: text; background-clip: text; color: transparent;">Let's Talk</h3>
                     <p style="color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.1rem;">Choose your preferred communication line:</p>
                     
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem;">
                         <a href="mailto:nikodimosenyew@gmail.com" class="contact-option" style="padding: 2rem 1rem; border: 1px solid var(--border-light); color: var(--text-primary); text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 1rem; transition: all 0.3s; background: rgba(var(--bg-secondary-rgb), 0.3);">
                             <i class="fas fa-envelope" style="font-size: 2.5rem; color: var(--text-primary);"></i>
                             <span style="font-weight: 500; letter-spacing: 1px;">Email</span>
